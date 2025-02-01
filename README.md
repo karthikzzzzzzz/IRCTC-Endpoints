@@ -31,25 +31,32 @@ This repository contains the implementation of a Railway Management System API. 
 ## Prerequisites
 
 Ensure the following are installed on your system:
+
 - Python 3.x or Node.js / Java JDK
 - MySQL/PostgreSQL
 - Git
 
 ---
 
-API Endpoints
+## API Endpoints
 
-User Endpoints
-Register a User: POST /api/register
-Login a User: POST /api/login
-Search Trains: GET /api/trains?source={source}&destination={destination}
-Book a Seat: POST /api/book
-Get Booking Details: GET /api/bookings/{id}
-Admin Endpoints (Protected by API Key)
-Add a Train: POST /api/admin/trains
-Update Train Seats: PATCH /api/admin/trains/{id}
-Authentication
+### User Endpoints
 
-Admin APIs: Require an API key (x-api-key header).
-User APIs: Require a JWT token (Authorization header).
+- **Register a User**: `POST /api/register`
+- **Login a User**: `POST /api/login`
+- **Search Trains**: `GET /api/trains?source={source}&destination={destination}`
+- **Book a Seat**: `POST /api/book`
+- **Get Booking Details**: `GET /api/bookings/{id}`
+
+### Admin Endpoints (Protected by API Key)
+
+- **Add a Train**: `POST /api/admin/trains`
+- **Update Train Seats**: `PATCH /api/admin/trains/{id}`
+
+---
+
+## Authentication
+
+- **Admin APIs**: Require an API key (`x-api-key` header).
+- **User APIs**: Require a JWT token (`Authorization` header).
 
